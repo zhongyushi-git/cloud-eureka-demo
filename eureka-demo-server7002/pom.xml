@@ -26,12 +26,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
-        <!--引入自己定义的模块-->
-        <dependency>
-            <groupId>com.zys.springcloud</groupId>
-            <artifactId>eureka-demo-api</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
 
     </dependencies>
 
