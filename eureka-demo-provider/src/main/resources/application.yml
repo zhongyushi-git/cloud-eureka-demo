@@ -33,3 +33,7 @@ eureka:
     instance-id: cloud-eureka-demo-provider
     #访问路径显示ip
     prefer-ip-address: true
+    #eureka服务端在接受到最后一次心跳后等待的时间，默认90s，超时剔除服务
+    lease-expiration-duration-in-seconds: 2
+    #eureka客户端向服务端发送心跳的时间，默认30s
+    lease-renewal-interval-in-seconds: 1
