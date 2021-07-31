@@ -17,8 +17,8 @@ eureka:
       #      defaultZone: http://localhost:7001/eureka
       #集群
       defaultZone: http://eureka7001.com:7001/eureka/, http://eureka7002.com:7002/eureka/, http://eureka7003.com:7003/eureka/
-  #设置入驻的服务的名称，是唯一的
   instance:
+    #设置入驻的服务的名称，是唯一的
     instance-id: cloud-eureka-demo-provider
     #访问路径显示ip
     prefer-ip-address: true

@@ -12,7 +12,6 @@
     <artifactId>eureka-demo-consumer</artifactId>
 
     <dependencies>
-        <!--web-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
