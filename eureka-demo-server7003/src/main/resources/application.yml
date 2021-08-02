@@ -2,10 +2,14 @@ server:
   port: 7003
 
 eureka:
+  #关闭自我保护
+  server:
+    enable-self-preservation: false
+    eviction-interval-timer-in-ms: 2000
   instance:
     #eureka服务端的实例名称
     #单机版
-    #    hostname: localhost
+#    hostname: localhost
     #集群
     hostname: eureka7003.com
   client:
@@ -16,15 +20,6 @@ eureka:
     service-url:
       #设置与Eureka Server交互的地址查询服务和注册服务都需要依赖这个地址
       #单机版
-      #      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+#      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
       #集群
       defaultZone: http://eureka7001.com:7001/eureka/, http://eureka7002.com:7002/eureka/
-  #关闭自我保护
-  server:
-    enable-self-preservation: false
-    eviction-interval-timer-in-ms: 2000
-
-
-
-
-
